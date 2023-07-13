@@ -50,11 +50,15 @@ Flink has been deployed. If Flink has not been deployed, follow these steps to d
 
    ```SQL
    # Download the Flink package.
-   wget https://dlcdn.apache.org/flink/flink-1.14.5/flink-1.14.5-bin-scala_2.11.tgz
+   wget https://dlcdn.apache.org/flink/flink-1.17.1/flink-1.17.1-bin-scala_2.12.tgz
+   # (if the terminal responds with certificate failure, use the --no-check-certificate command to proceed as shown in the following example)
+   # wget --no-check-certificate https://dlcdn.apache.org/flink/flink-1.17.1/flink-1.17.1-bin-scala_2.12.tgz
+   
    # Unzip the Flink package.
-   tar -xzf flink-1.14.5-bin-scala_2.11.tgz
+   tar -xzf flink-1.17.1-bin-scala_2.12.tgz
+   
    # Go to the Flink directory.
-   cd flink-1.14.5
+   cd flink-1.17.1
    ```
 
 3. Start your Flink cluster.
